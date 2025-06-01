@@ -1,4 +1,4 @@
-# 📝 FastAPI + Angular ToDo App
+## 📝 FastAPI + Angular ToDo App
 
 This is a full-stack ToDo application built with **FastAPI** (Python) for the backend and **Angular** for the frontend. It allows users to add, view, and delete tasks, with data stored in a MySQL database.
 
@@ -41,15 +41,18 @@ This is a full-stack ToDo application built with **FastAPI** (Python) for the ba
    cd backend
 
 2. Create a virtual environment:
+   ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate # On Windows: venv\Scripts\activate
 
 3. Install dependencies:
+   ```bash
    pip install -r requirements.txt
 
 4. Create a .env file in the backend folder
 
 5. Run the FastAPI server:
+   ```bash
    uvicorn main:app --reload
 
 The backend will run at: http://127.0.0.1:8000
@@ -59,26 +62,30 @@ The backend will run at: http://127.0.0.1:8000
 ### Frontend Setup (Angular)
 
 1. Navigate to the Angular app directory:
+   ```bash
    cd frontend/todo-app
 
 2. Install dependencies:
+   ```bash
    npm install
 
 3. Run the Angular development server:
+   ```bash
    ng serve
 
 The frontend will run at: http://localhost:4200
 
 
+### API Endpoints
 
-## API Endpoints
+| Method | Endpoint       | Description        |
+|--------|----------------|--------------------|
+| GET    | `/get_tasks`   | Fetch all tasks    |
+| POST   | `/add_task`    | Add a new task     |
+| POST   | `/delete_task` | Delete a task      |
 
-Method     	Endpoint       	Description
-GET	        /get_tasks	    Fetch all tasks
-POST	    /add_task	    Add a new task
-POST	    /delete_task	Delete a task
 
-## TODO (Future Improvements)
+### TODO (Future Improvements)
 
  Dockerize the project
 
@@ -89,6 +96,6 @@ POST	    /delete_task	Delete a task
  Deploy to Vercel / Render / Railway
 
 
-# Author
-Avanti Deshpande
+### Author
+Avanti Deshpande - 
 Full Stack Developer
